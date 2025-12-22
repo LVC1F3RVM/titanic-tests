@@ -1,0 +1,13 @@
+
+# Playwright
+node_modules/
+.github/workflows/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+package.json
+package-lock.json
+playwright.config.ts
+tsconfig.json
