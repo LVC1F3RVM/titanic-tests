@@ -15,36 +15,38 @@
 
 ## **🗂️ Структура репозитория**
 
+```
 titanic-tests/  
-├── src/                        \# Исходный код вспомогательных утилит  
+├── src/                        # Исходный код вспомогательных утилит  
 │   ├── config/  
-│   │   └── constants.ts        \# Конфигурация: URL-адреса, тестовые данные (Admin/User credentials)  
+│   │   └── constants.ts        # Конфигурация: URL-адреса, тестовые данные (Admin/User credentials)  
 │   └── utils/  
-│       └── auth.helper.ts      \# Хелпер для автоматической регистрации/логина и получения токенов  
+│       └── auth.helper.ts      # Хелпер для автоматической регистрации/логина и получения токенов  
 │  
-├── tests/                      \# Основные файлы тестов (Test Suites)  
+├── tests/                      # Основные файлы тестов (Test Suites)  
 │   ├── api\_gateway/  
-│   │   └── api-gateway.spec.ts \# Тесты маршрутизации, Health Check и полного цикла (Lifecycle)  
+│   │   └── api-gateway.spec.ts # Тесты маршрутизации, Health Check и полного цикла (Lifecycle)  
 │   ├── auth\_service/  
-│   │   └── auth-service.spec.ts \# Тесты регистрации, логина, токенов и профиля  
+│   │   └── auth-service.spec.ts # Тесты регистрации, логина, токенов и профиля  
 │   ├── passenger\_service/  
-│   │   └── passenger-service.spec.ts \# CRUD операции, фильтрация, права доступа и Пасхалки  
+│   │   └── passenger-service.spec.ts # CRUD операции, фильтрация, права доступа и Пасхалки  
 │   ├── statistics\_service/  
-│   │   └── statistics-service.spec.ts \# Тесты аналитики и агрегации данных  
-│   ├── advanced/               \# Продвинутые сценарии тестирования  
-│   │   ├── boundary-security.spec.ts \# Граничные значения и проверка безопасности (XSS, SQLi)  
-│   │   ├── contract.spec.ts    \# Контрактное тестирование (проверка типов полей)  
-│   │   └── resilience-loop.spec.ts \# Тест на устойчивость (Chaos Testing)  
-│   └── docs.spec.ts            \# Проверка доступности Swagger UI  
+│   │   └── statistics-service.spec.ts # Тесты аналитики и агрегации данных  
+│   ├── advanced/               # Продвинутые сценарии тестирования  
+│   │   ├── boundary-security.spec.ts # Граничные значения и проверка безопасности (XSS, SQLi)  
+│   │   ├── contract.spec.ts    # Контрактное тестирование (проверка типов полей)  
+│   │   └── resilience-loop.spec.ts # Тест на устойчивость (Chaos Testing)  
+│   └── docs.spec.ts            # Проверка доступности Swagger UI  
 │
-├── .gitignore                  \# Git ignore rules  
-├── playwright.config.ts        \# Конфигурация Playwright (браузеры, таймауты, репорты)  
-├── package.json                \# Зависимости проекта (npm)  
-├── tsconfig.json               \# Настройки компилятора TypeScript  
-├── README.md                   \# Основная инструкция по запуску  
-├── REQUIREMENTS_TESTING.md     \# Основная инструкция по требованиям для запуска тестов
-├── TESTING_INFRASTRUCTURE_SETUP.md     \# Основная инструкция по настройке инфраструктуры фреймворка
-└── TESTING\_MANUAL\*.md          \# Подробные руководства по каждому набору тестов
+├── .gitignore                  # Git ignore rules  
+├── playwright.config.ts        # Конфигурация Playwright (браузеры, таймауты, репорты)  
+├── package.json                # Зависимости проекта (npm)  
+├── tsconfig.json               # Настройки компилятора TypeScript  
+├── README.md                   # Основная инструкция по запуску  
+├── REQUIREMENTS_TESTING.md     # Основная инструкция по требованиям для запуска тестов
+├── TESTING_INFRASTRUCTURE_SETUP.md     # Основная инструкция по настройке инфраструктуры фреймворка
+└── TESTING\_MANUAL\*.md          # Подробные руководства по каждому набору тестов
+```
 
 ## **🔍 Описание модулей**
 
